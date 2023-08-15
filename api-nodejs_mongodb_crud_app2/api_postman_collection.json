@@ -1,0 +1,178 @@
+{
+	"info": {
+		"_postman_id": "156cee33-444d-428b-b109-1d8e14cd164b",
+		"name": "Nodejs - MongoDB with Image",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7573401"
+	},
+	"item": [
+		{
+			"name": "Get All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Abdul Hafeez",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "22",
+							"type": "text"
+						},
+						{
+							"key": "father_name",
+							"value": "Ghulam Sarwar",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "Male",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/Abdul Hafeez/Pictures/3.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/students/9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"students",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update by ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Abdul Hafeez",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "22",
+							"type": "text"
+						},
+						{
+							"key": "father_name",
+							"value": "Ghulam Sarwar",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "Male",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/Abdul Hafeez/Pictures/3.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/students/64c6ec44f827f0628a1cc162",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"students",
+						"64c6ec44f827f0628a1cc162"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/students/64c6ec44f827f0628a1cc162",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"students",
+						"64c6ec44f827f0628a1cc162"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/students/64c6ec12f827f0628a1cc161",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"students",
+						"64c6ec12f827f0628a1cc161"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

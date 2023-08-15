@@ -1,0 +1,18 @@
+{
+  "name": "api-nodejs-mongodb-crud-app2",
+  "version": "1.0.0",
+  "description": "mkdir student-api\r cd student-api\r npm init -y\r npm install express body-parser mongodb multer",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "mongodb": "^5.7.0",
+    "multer": "^1.4.5-lts.1"
+  }
+}

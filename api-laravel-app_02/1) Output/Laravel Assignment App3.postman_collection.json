@@ -1,0 +1,189 @@
+{
+	"info": {
+		"_postman_id": "9715f239-8b07-4454-8a4d-deb5e664b4c8",
+		"name": "Laravel Assignment App3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25693116"
+	},
+	"item": [
+		{
+			"name": "Get Data All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/getDataAll",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"getDataAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Data using ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/getData/4",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"getData",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Data using ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/deleteData/5",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"deleteData",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "test-a1",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "test-a2",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "test-a3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/addData",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"addData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Udate Data using ID",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"aaaaa-a1\",\r\n    \"email\": \"aaaaa-a2\",\r\n    \"address\": \"aaaaa-a3\"    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/updateData/8",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"updateData",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Data using JSON",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"test-a1\",\r\n    \"email\": \"test-a2\",\r\n    \"address\": \"test-a3\"    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/addData",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"addData"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,205 @@
+{
+	"info": {
+		"_postman_id": "c794dc79-4222-4240-a3dd-39d90eebaa8d",
+		"name": "WP API - Students",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7573401"
+	},
+	"item": [
+		{
+			"name": "Add Student",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Abdul Hafeez\",\r\n    \"age\": 26,\r\n    \"gender\": \"Male\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost/wp_codehafeez/wp-json/student-api/v1/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"wp_codehafeez",
+						"wp-json",
+						"student-api",
+						"v1",
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Student",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Code Hafeez\",\r\n    \"age\": 28,\r\n    \"gender\": \"Male\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/wp_codehafeez/wp-json/student-api/v1/students/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"wp_codehafeez",
+						"wp-json",
+						"student-api",
+						"v1",
+						"students",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Students",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost/wp_codehafeez/wp-json/student-api/v1/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"wp_codehafeez",
+						"wp-json",
+						"student-api",
+						"v1",
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Getting a Specific Student",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost/wp_codehafeez/wp-json/student-api/v1/students/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"wp_codehafeez",
+						"wp-json",
+						"student-api",
+						"v1",
+						"students",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Finding Students by Name",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/wp_codehafeez/wp-json/student-api/v1/students/find/Hafeez",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"wp_codehafeez",
+						"wp-json",
+						"student-api",
+						"v1",
+						"students",
+						"find",
+						"Hafeez"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Student",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/wp_codehafeez/wp-json/student-api/v1/students/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"wp_codehafeez",
+						"wp-json",
+						"student-api",
+						"v1",
+						"students",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,597 @@
+{
+	"info": {
+		"_postman_id": "147c8307-9c80-4ab0-878c-1216647d91f3",
+		"name": "WordPress Custom API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7573401"
+	},
+	"item": [
+		{
+			"name": "Persons",
+			"item": [
+				{
+					"name": "Add Person",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Abdul Hafeez",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "27",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "Male",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Abdul Hafeez/Pictures/1.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/wp_codehafeez/wp-json/person-api/v1/persons",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"wp_codehafeez",
+								"wp-json",
+								"person-api",
+								"v1",
+								"persons"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Person",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "CodeHafeez",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "26",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "Male",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Abdul Hafeez/Pictures/1.jpg",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/wp_codehafeez/wp-json/person-api/v1/persons/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"wp_codehafeez",
+								"wp-json",
+								"person-api",
+								"v1",
+								"persons",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Persons",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost/wp_codehafeez/wp-json/person-api/v1/persons",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"wp_codehafeez",
+								"wp-json",
+								"person-api",
+								"v1",
+								"persons"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Getting a Specific Person",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost/wp_codehafeez/wp-json/person-api/v1/persons/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"wp_codehafeez",
+								"wp-json",
+								"person-api",
+								"v1",
+								"persons",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Finding Person by Name",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/wp_codehafeez/wp-json/person-api/v1/persons/find/Hafeez",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"wp_codehafeez",
+								"wp-json",
+								"person-api",
+								"v1",
+								"persons",
+								"find",
+								"Hafeez"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Person",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/wp_codehafeez/wp-json/person-api/v1/persons/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"wp_codehafeez",
+								"wp-json",
+								"person-api",
+								"v1",
+								"persons",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Posts",
+			"item": [
+				{
+					"name": "Add Book",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Understanding RESTful APIs and Their Importance\",\r\n    \"content\": \"In the world of web development, APIs (Application Programming Interfaces) play a crucial role in enabling communication between different software applications. RESTful APIs, in particular, have gained immense popularity due to their simplicity and flexibility. In this post, we'll delve into the fundamentals of RESTful APIs, their key characteristics, and why they are essential for modern web applications. Whether you're a developer looking to integrate APIs or someone curious about the technical aspects of APIs, this post will provide you with a solid understanding of the topic.\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/wp_codehafeez/wp-json/custom/v1/books/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"wp_codehafeez",
+								"wp-json",
+								"custom",
+								"v1",
+								"books",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Book",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1, // Replace with the ID of the book you want to update\r\n    \"title\": \"Updated Book Title\",\r\n    \"content\": \"This is the updated content of the book.\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/wp_codehafeez/wp-json/custom/v1/books/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"wp_codehafeez",
+								"wp-json",
+								"custom",
+								"v1",
+								"books",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve Books",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost/wp_codehafeez/wp-json/custom/v1/books",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"wp_codehafeez",
+								"wp-json",
+								"custom",
+								"v1",
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Book",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1 // Replace with the ID of the book you want to delete\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/wp_codehafeez/wp-json/custom/v1/books/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"wp_codehafeez",
+								"wp-json",
+								"custom",
+								"v1",
+								"books",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Students",
+			"item": [
+				{
+					"name": "Add Student",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Abdul Hafeez\",\r\n    \"age\": 26,\r\n    \"gender\": \"Male\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "http://localhost/wp_codehafeez/wp-json/student-api/v1/students",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"wp_codehafeez",
+								"wp-json",
+								"student-api",
+								"v1",
+								"students"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Student",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Code Hafeez\",\r\n    \"age\": 28,\r\n    \"gender\": \"Male\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/wp_codehafeez/wp-json/student-api/v1/students/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"wp_codehafeez",
+								"wp-json",
+								"student-api",
+								"v1",
+								"students",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Students",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost/wp_codehafeez/wp-json/student-api/v1/students",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"wp_codehafeez",
+								"wp-json",
+								"student-api",
+								"v1",
+								"students"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Getting a Specific Student",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost/wp_codehafeez/wp-json/student-api/v1/students/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"wp_codehafeez",
+								"wp-json",
+								"student-api",
+								"v1",
+								"students",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Finding Students by Name",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/wp_codehafeez/wp-json/student-api/v1/students/find/Hafeez",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"wp_codehafeez",
+								"wp-json",
+								"student-api",
+								"v1",
+								"students",
+								"find",
+								"Hafeez"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Student",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/wp_codehafeez/wp-json/student-api/v1/students/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"wp_codehafeez",
+								"wp-json",
+								"student-api",
+								"v1",
+								"students",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

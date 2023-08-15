@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "fb76b0dd-c51b-4f23-821e-f94af4eee6b3",
+		"name": "Laravel Assignment App4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25693116"
+	},
+	"item": [
+		{
+			"name": "Upload Image",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/hafeez/Desktop/1635647388450.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/image",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"image"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

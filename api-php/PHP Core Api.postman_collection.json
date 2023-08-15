@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "990112ad-6db7-4bd2-86d6-7a20eb5b763d",
+		"name": "PHP Core Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7573401"
+	},
+	"item": [
+		{
+			"name": "Read",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/php-api/read.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"php-api",
+						"read.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"John Doe\",\r\n  \"email\": \"john.doe@example.com\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/php-api/insert.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"php-api",
+						"insert.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

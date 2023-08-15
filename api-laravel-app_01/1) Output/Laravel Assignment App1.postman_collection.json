@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "83d60d54-3ed5-49ed-86b9-b05d7a487324",
+		"name": "Laravel Assignment App1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25693116"
+	},
+	"item": [
+		{
+			"name": "Simple Api - Get Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/data",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Simple Api - Get Blog",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/blogs",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"blogs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Simple Api - Get Blog using ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/blogs/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"blogs",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Simple Api - Delete Blog using ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/blogs/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"blogs",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Simple Api - PostData",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"value1\": \"test value1\",\r\n    \"value2\": \"test value2\",\r\n    \"value3\": \"test value3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/postData",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"postData"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "33ff1036-1a76-4744-ab31-7cd98d4a11cd",
+		"name": "Nodejs - Upload Image",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25693116"
+	},
+	"item": [
+		{
+			"name": "Upload-Image",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/hafeez/Pictures/image1.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload Image with Text",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "test1",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "test2",
+							"type": "text"
+						},
+						{
+							"key": "profile_image",
+							"type": "file",
+							"src": "/C:/Users/hafeez/Pictures/image1.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"students"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

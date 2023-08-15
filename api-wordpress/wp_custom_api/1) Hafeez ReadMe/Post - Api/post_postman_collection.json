@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "785553e1-1c37-4e5b-a9dd-b82b1123b2f5",
+		"name": "WP API - Post",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7573401"
+	},
+	"item": [
+		{
+			"name": "Add Book",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Understanding RESTful APIs and Their Importance\",\r\n    \"content\": \"In the world of web development, APIs (Application Programming Interfaces) play a crucial role in enabling communication between different software applications. RESTful APIs, in particular, have gained immense popularity due to their simplicity and flexibility. In this post, we'll delve into the fundamentals of RESTful APIs, their key characteristics, and why they are essential for modern web applications. Whether you're a developer looking to integrate APIs or someone curious about the technical aspects of APIs, this post will provide you with a solid understanding of the topic.\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/wp_codehafeez/wp-json/custom/v1/books/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"wp_codehafeez",
+						"wp-json",
+						"custom",
+						"v1",
+						"books",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Book",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1, // Replace with the ID of the book you want to update\r\n    \"title\": \"Updated Book Title\",\r\n    \"content\": \"This is the updated content of the book.\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/wp_codehafeez/wp-json/custom/v1/books/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"wp_codehafeez",
+						"wp-json",
+						"custom",
+						"v1",
+						"books",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve Books",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost/wp_codehafeez/wp-json/custom/v1/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"wp_codehafeez",
+						"wp-json",
+						"custom",
+						"v1",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Book",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1 // Replace with the ID of the book you want to delete\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/wp_codehafeez/wp-json/custom/v1/books/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"wp_codehafeez",
+						"wp-json",
+						"custom",
+						"v1",
+						"books",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

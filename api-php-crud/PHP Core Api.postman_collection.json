@@ -1,0 +1,225 @@
+{
+	"info": {
+		"_postman_id": "990112ad-6db7-4bd2-86d6-7a20eb5b763d",
+		"name": "PHP Core Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7573401"
+	},
+	"item": [
+		{
+			"name": "Read All Data",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/php-core-api/api_fetch_all.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"php-core-api",
+						"api_fetch_all.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read by ID",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"sid\": 3\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost/php-core-api/api_fetch_single.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"php-core-api",
+						"api_fetch_single.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"search\": \"joh\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost/php-core-api/api_search.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"php-core-api",
+						"api_search.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"sname\": \"John Doe\",\r\n  \"sage\": 25,\r\n  \"scity\": \"New York\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/php-core-api/api_insert.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"php-core-api",
+						"api_insert.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update by ID",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"sid\": 2,\r\n  \"sname\": \"John Mark\",\r\n  \"sage\": 22,\r\n  \"scity\": \"Los Test\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/php-core-api/api_update.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"php-core-api",
+						"api_update.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete by ID",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"sid\": 3\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/php-core-api/api_delete.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"php-core-api",
+						"api_delete.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

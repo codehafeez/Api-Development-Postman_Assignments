@@ -1,0 +1,169 @@
+{
+	"info": {
+		"_postman_id": "e4f4dc9a-7e53-4e6a-8975-4de34190cef0",
+		"name": "Laravel CRUD Image - API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7573401"
+	},
+	"item": [
+		{
+			"name": "Get All Resources",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/resources",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"resources"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Resources by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/resources/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"resources",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Resources by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/resources/8",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"resources",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Resources",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Abdul Hafeez",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "27",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/Abdul Hafeez/Desktop/Desktop/ALM Gold/Office - Karachi/logo1.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/resources",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"resources"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Resources by ID",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Abdul Hafeez",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "22",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/Abdul Hafeez/Desktop/Desktop/ALM Gold/Office - Karachi/logo2.png",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/resources/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"resources",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
